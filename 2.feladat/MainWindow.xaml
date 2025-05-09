@@ -8,7 +8,18 @@
         Title="Kalkulátor függvény" Height="350" Width="400">
     <Grid>
         <Label
-            Content="1.adat"
+            Content="Calculátor adatai:"
+            Margin="30 20 0 0"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left"
+            FontSize="16"
+            Height="auto"
+            Width="auto"
+            FontWeight="Bold"
+            />
+        
+        <Label
+            Content="1.adat:"
             Margin="60 50 0 0"
             VerticalAlignment="Top"
             HorizontalAlignment="Left"
@@ -17,7 +28,7 @@
             Width="auto"
             />
         <TextBox
-            x:Name="tbx_szam1"
+            x:Name="tbx_adat1"
             Text=""
             Width="130"
             Height="25"
@@ -28,7 +39,7 @@
             />
 
         <Label
-            Content="2.adat"
+            Content="2.adat:"
             Margin="60 100 0 0"
             VerticalAlignment="Top"
             HorizontalAlignment="Left"
@@ -37,19 +48,19 @@
             Width="auto"
             />
         <TextBox
-            x:Name="tbx_szam1"
+            x:Name="tbx_adat2"
             Text=""
             Width="130"
             Height="25"
             VerticalAlignment="Top"
             HorizontalAlignment="Left"
             FontSize="16"
-            Margin="200 53 0 0"
+            Margin="200 103 0 0"
             />
 
         <Label
-            Content="Műveleti jel"
-            Margin="60 50 0 0"
+            Content="Műveleti jel:"
+            Margin="60 150 0 0"
             VerticalAlignment="Top"
             HorizontalAlignment="Left"
             FontSize="16"
@@ -57,14 +68,36 @@
             Width="auto"
             />
         <TextBox
-            x:Name="tbx_szam1"
+            x:Name="tbx_müvJel"
             Text=""
             Width="130"
             Height="25"
             VerticalAlignment="Top"
             HorizontalAlignment="Left"
             FontSize="16"
-            Margin="200 53 0 0"
+            Margin="200 153 0 0"
             />
+
+        <Label
+            Content="Művelet eredménye:"
+            Margin="60 220 0 0"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left"
+            FontSize="16"
+            Height="auto"
+            Width="auto"
+            FontWeight="DemiBold"
+            />
+        <TextBox
+            x:Name="tbx_eredmény"
+            Text=""
+            Width="265"
+            Height="25"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left"
+            FontSize="16"
+            Margin="65 250 0 0"
+            />
+        
     </Grid>
 </Window>
